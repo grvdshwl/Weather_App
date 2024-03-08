@@ -3,8 +3,8 @@ import { FREE_WEATHER_KEY, OPEN_WEATHER_KEY } from "../config";
 
 export const getWeatherData = async (latitude:string, longitude:string, cnt = 7) => {
     const sunriseUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${OPEN_WEATHER_KEY}`;
-    const weatherUrl = `http://api.weatherapi.com/v1/current.json?key=${FREE_WEATHER_KEY}&q=${latitude},${longitude}&aqi=yes`
-    const forecastUrl = `http://api.weatherapi.com/v1/forecast.json?key=${FREE_WEATHER_KEY}&q=${latitude},${longitude}&aqi=no&alerts=no&days=${cnt}`;
+    const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${FREE_WEATHER_KEY}&q=${latitude},${longitude}&aqi=yes`
+    const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${FREE_WEATHER_KEY}&q=${latitude},${longitude}&aqi=no&alerts=no&days=${cnt}`;
 
     try {
         const [sunriseResponse,weatherResponse, forecastResponse] = await Promise.all([

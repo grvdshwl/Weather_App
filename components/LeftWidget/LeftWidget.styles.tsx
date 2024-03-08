@@ -138,6 +138,7 @@ const TextBox = styled.div`
   transform: translate(-50%, -50%);
   color: white;
   opacity: 1;
+  text-transform: capitalize;
 `;
 interface LocationWidgetProps {
   src: string;
