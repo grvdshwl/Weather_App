@@ -172,7 +172,7 @@ export const extractWeatherDetails = (data: any) => {
 };
 
 export const getLatLong = async (query: string) => {
-  const url = `http://api.weatherapi.com/v1/search.json?key=${FREE_WEATHER_KEY}&q=${query}`;
+  const url = `https://api.weatherapi.com/v1/search.json?key=${FREE_WEATHER_KEY}&q=${query}`;
 
   try {
     const response = await fetch(url);
