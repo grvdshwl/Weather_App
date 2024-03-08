@@ -1,0 +1,7 @@
+export const UNSPLASH_ACCESS_KEY = "Jw7_GEY5TjRCsE-BFylTneoFydY4A1SkVVFqQ9dqCW8"
+
+export const UNSPLASH_SECRET_KEY = "YEo-noCAJn938YGc_kECRuWjXKLMHKzVQxIKt_YxzOo"
+
+ export const OPEN_WEATHER_KEY= "73cbbea6af1ffec03cd9e693b6c39ac4"
+
+ export const FREE_WEATHER_KEY = "c2f9c45c3a5d4bf4b2642628240803"
